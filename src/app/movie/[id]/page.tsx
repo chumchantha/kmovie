@@ -32,7 +32,8 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
           preload="none"
         >
           <source
-            src="https://res.cloudinary.com/dkvbk9jnb/video/upload/v1722610948/B_mpldwe.mp4"
+            // src="https://res.cloudinary.com/dkvbk9jnb/video/upload/v1722610948/B_mpldwe.mp4"
+            src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/B.mp4?alt=media&token=0aeca2f2-b34c-4616-a364-cdc39d912439"
             type="video/mp4"
           />
         </video>
