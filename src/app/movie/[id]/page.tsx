@@ -12,18 +12,19 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
   return (
     <main className="space-y-4">
       <div className="w-full h-[36vh]">
-        {/* <iframe
+        <iframe
           className="w-full h-full"
           width="1280"
-          src={`https://www.youtube.com/embed/${movie?.trailer}`}
+          // src={`https://www.youtube.com/embed/${movie?.trailer}`}
+          src={`https://streamable.com/e/sm799s`}
           title="Single in Seoul | Official Main Trailer | INTL"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
-        ></iframe> */}
+        ></iframe>
 
-        <video
+        {/* <video
           className="w-full h-full bg-gray-900"
           autoPlay
           muted
@@ -33,10 +34,10 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
         >
           <source
             // src="https://res.cloudinary.com/dkvbk9jnb/video/upload/v1722610948/B_mpldwe.mp4"
-            src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/B.mp4?alt=media&token=0aeca2f2-b34c-4616-a364-cdc39d912439"
+            // src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/B.mp4?alt=media&token=0aeca2f2-b34c-4616-a364-cdc39d912439"
             type="video/mp4"
           />
-        </video>
+        </video> */}
       </div>
 
       <div className="mx-4 flex gap-4 bg-gray-900 rounded-xl shadow-md p-4">
