@@ -23,15 +23,8 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe> */}
-        <iframe
-          src="https://streamable.com/e/q72dfk?quality=highest"
-          frameBorder="0"
-          width="100%"
-          height="100%"
-          allowFullScreen
-        ></iframe>
 
-        {/* <video
+        <video
           className="w-full h-full bg-gray-900"
           autoPlay
           muted
@@ -41,10 +34,10 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
         >
           <source
             // src="https://res.cloudinary.com/dkvbk9jnb/video/upload/v1722610948/B_mpldwe.mp4"
-            // src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/B.mp4?alt=media&token=0aeca2f2-b34c-4616-a364-cdc39d912439"
+            src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/1.mp4?alt=media&token=b6f55293-ae9b-429c-8c87-7e9128072a81"
             type="video/mp4"
           />
-        </video> */}
+        </video>
       </div>
 
       <div className="mx-4 flex gap-4 bg-gray-900 rounded-xl shadow-md p-4">
