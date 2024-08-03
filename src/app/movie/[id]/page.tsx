@@ -12,15 +12,22 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
   return (
     <main className="space-y-4">
       <div className="w-full h-[36vh]">
-        <iframe
+        {/* <iframe
           className="w-full h-full"
           width="1280"
           // src={`https://www.youtube.com/embed/${movie?.trailer}`}
-          src={`https://streamable.com/e/sm799s`}
+          src={`https://streamable.com/e/q72dfk`}
           title="Single in Seoul | Official Main Trailer | INTL"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe> */}
+        <iframe
+          src="https://streamable.com/e/q72dfk?quality=highest"
+          frameBorder="0"
+          width="100%"
+          height="100%"
           allowFullScreen
         ></iframe>
 
