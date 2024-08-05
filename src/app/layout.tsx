@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,10 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Script
+          src="https://cdn.jwplayer.com/libraries/N2CsDy1O.js"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );

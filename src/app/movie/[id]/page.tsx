@@ -1,6 +1,7 @@
 import prisma from "@/db";
 import Image from "next/image";
 import { MovieType } from "../../../../type";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const MovieId = async ({ params }: { params: { id: string } }) => {
   const movie = await prisma.movie.findUnique({
@@ -12,7 +13,7 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
   return (
     <main className="space-y-4">
       <div className="w-full h-[285px]">
-        <video
+        {/* <video
           className="w-full h-full bg-black"
           autoPlay
           muted
@@ -26,7 +27,8 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
             src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/1.mp4?alt=media&token=b6f55293-ae9b-429c-8c87-7e9128072a81"
             type="video/mp4"
           />
-        </video>
+        </video> */}
+        <VideoPlayer videoId="FOcZhvp4" />
       </div>
 
       <div className="mx-4 flex gap-4 bg-gray-900 rounded-xl shadow-md p-4">
