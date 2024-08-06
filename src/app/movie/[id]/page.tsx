@@ -12,7 +12,7 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
 
   return (
     <main className="space-y-4">
-      <div className="w-full h-[285px]">
+      <div className="w-full">
         {/* <video
           className="w-full h-full bg-black"
           autoPlay
