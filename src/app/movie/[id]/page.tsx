@@ -28,7 +28,7 @@ const MovieId = async ({ params }: { params: { id: string } }) => {
             type="video/mp4"
           />
         </video> */}
-        <VideoPlayer videoId="FOcZhvp4" />
+        <VideoPlayer videoId="RuTIhMUI" />
       </div>
 
       <div className="mx-4 flex gap-4 bg-gray-900 rounded-xl shadow-md p-4">
