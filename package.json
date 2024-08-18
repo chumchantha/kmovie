@@ -10,13 +10,16 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@mux/mux-player-react": "^2.9.1",
     "@prisma/client": "^5.17.0",
     "@radix-ui/react-avatar": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "hls.js": "^1.5.14",
     "lucide-react": "^0.424.0",
     "next": "14.2.5",
     "next-cloudinary": "^6.9.0",
+    "plyr": "^3.7.8",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.4.0",

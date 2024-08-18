@@ -1,7 +1,7 @@
 import Image from "next/image";
 import prisma from "../db";
 import Link from "next/link";
-import VideoPlayer from "@/components/VideoPlayer";
+import CustomVideoPlayer from "@/components/CustomVideoPlayer";
 
 export default async function Home() {
   const movies = await prisma.movie.findMany({
@@ -11,9 +11,10 @@ export default async function Home() {
     <main className="p-4">
       <section className="space-y-2">
         <h1 className="font-bold text-xl">KMovies</h1>
-        {/* 
-        <VideoPlayer videoId="FOcZhvp4" /> */}
-
+        <CustomVideoPlayer
+          src="https://firebasestorage.googleapis.com/v0/b/kmovie-178ce.appspot.com/o/1.mp4?alt=media&token=b6f55293-ae9b-429c-8c87-7e9128072a81"
+          poster="https://image.tmdb.org/t/p/original/vUVPHEo4ayCO4kkNV4k0PbWPmZS.jpg"
+        />
         <div className="grid grid-cols-3 gap-4">
           {movies.map((movie) => (
             <Link

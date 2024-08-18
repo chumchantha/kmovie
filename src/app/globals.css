@@ -58,3 +58,20 @@
     --chart-5: 340 75% 55%;
   }
 }
+
+/* styles/globals.css */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; /* Make sure it's above other content */
+}
